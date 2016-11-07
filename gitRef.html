@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+<!-- gitRef.html - summary of git commands
+    Author: Brittany Wimmer - Email: Wimmerb@csp.edu
+    Written: 11/3/16
+    Revised: 11/4/16
+  -->
+ <title>Git Commands</title>
+</head>
+<body style="backround-color:pink;">
+    <h1>The "Git" Commands</h1>
+    <!-- Alongside each command, include succinct notes to help you use Git.
+
+Use HTML elements including headings, color, fonts, and tables to maximize readability and the UX. -->
+
+    <h3>The commands you use to navigate through directories on the command line. Such as changing drives, changing directories, and showing the contents           of a directory.</h3>
+    <p>When you first open git, you might be at the base of your computer directory.If mine looks like "Brittany Wimmer@Brittany-Laptop MINGW64 ~" then I  know I am at the top of the directory tree. From here I can enter the location of where I need to go by typing <strong>cd BrittanyWimmer</strong>. Now I am in a new directory of  "Brittany Wimmer@Brittany-Laptop MINGW64 ~/BrittanyWimmer". If I didn't know BrittanyWimmer was a choice of the directory I could change to, by typing <strong>ls</strong>, I get a list of all the directories I can move to.  If I want to move to a new drive, I type <strong>cd c:</strong> and now I am in the c drive.</br></p>
+    <h3>How to initialize a stand-alone, local Git repository.</h3>
+    <p>If I want to make a new repository, I first need to make sure I am in the correct folder. Look at your line and double check everything follows in the correct order. One way to for sure be in the correct directory is to navigate there in your system files and then right click. There should be a choice to "git bash here". If you select that, then you are now in the correctly directory for git. On my git command line, I type <strong>git init </strong> and now I have a local Git repository. To know it worked, you should see "(master)" at the end of your location.</br></p>
+    <h3>How to initialize a local Git repository from a GitHub repository.</h3>
+    <p>If I want to make a new repository from one that already exists, like one on GitHub or Bitbucket, I would first do the same steps as making a new one and make sure I'm in the right directory. Then you still need to make a blank repository with <strong>git init</strong>. After that, on the git command line,type <strong>git clone "the path to the remote repository"</strong>. Then you would type <strong>git remote add origin "the path to the remote repository"</strong>. Now your repository is a match to the remote repository you wanted and connected with it. </br></p>
+    <h3>How to get the most recent code from GitHub.</h3>
+<p>To get the most recent code from your remote repository, just type <strong>git pull</strong>. Now everything should be up to date with your remote repository. If there is a merge conflic, you will get a message and it will have you make a merge commit.</br></p>
+    <h3>How to add and commit changes to a repository.</h3>
+<p>If you do anything new to a file or even add a file to your work, you need to stage it. By typing <strong>git add 'name of the new file'. with the correct extension'</strong>.You have now staged it to the files in the repository. When making changes or adding files, you need to make a commit. This stores the work with a message. Just type out <strong>git commit -m "message about what you did"</strong></br></p>
+    <h3>How to check the status of the repository.</h3>
+<p>If you are ever unsure about what to do next in your repository, just type <strong>git status</strong>. This will tell you a lot, like if anything new files need to be staged, or if any commits have not been pushed to your remote repository. It will also tell you if everything is up to date with the remote repository. </br></p>
+    <h3>How to save your changes to a repository out on GitHub.</h3>
+<p>Whenever you make a change to a file in your local repository, you should also make a commit.The first thing you do is stage the file you have  changed. You do this by <strong>git add 'name'</strong>. Then you would make a commit with a message about what you did with <strong>git commit -m "what you did"</strong> Then you need to do a <strong>git push</strong>. This sends your changes to the remote repository for everyone else to see what you changed. It also saves your work in case something happens to your local repository.</br></p>
+    <h3>How to view a list of all the commits in a repository.</h3>
+<p>If you want to see all the commits, all you have to type is <strong>git log</strong> and you will be given a set of all the commits </br></p>
+    <h3>How to make a temporary branch from the master repository.</h3>
+<p>Sometimes when working, it is best to make a branch. That way you can test your changes and see if they break anything without breaking the master that everyone else needs to work off of. On master, type <strong>git checkout -b "name of branch"</strong>. </br></p>
+    <h3>How to merge a branch back into the master.</h3>
+    <p>When ever you are done with a branch, you should merge everything back into master. I always move my head back to master and then merge the branch I want into master. There is more than one way to merge into master. So on my branch I have created and made commits with, I will type <strong>git checkout master</strong>.Then I would type <strong>git merge 'name of branch'</strong>. Now master will have everything from that branch. </br></p>
+    
+<!--Include the URL to the GitHub repository as a hyperlink at the bottom of the page.-->
+    </br>
+    <a href="https://github.com/brittanymw/CSC245" target="_blank">Here is the link to my Github REPO</a>
+</body>
+</html>
+<!-- Page was ran through grammerly -->
